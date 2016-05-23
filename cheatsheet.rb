@@ -36,3 +36,7 @@ end
 get '/rm' do
 	`man rm`
 end
+
+post '/search' do
+	'man #{params[:search]}'
+end
